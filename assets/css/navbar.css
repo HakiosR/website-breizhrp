@@ -1,0 +1,25 @@
+.navbar {
+    background-color: var(--color-blue);
+    padding: 10px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: var(--color-white);
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+  }
+  
+  .navbar a:hover {
+    color: var(--color-gold);
+  }

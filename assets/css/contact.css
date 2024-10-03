@@ -1,0 +1,33 @@
+.contact {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  form {
+    background-color: var(--color-gray);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 400px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-blue);
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: var(--color-green);
+  }
+  

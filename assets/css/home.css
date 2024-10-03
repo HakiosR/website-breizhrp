@@ -1,0 +1,27 @@
+.home {
+    text-align: center;
+    padding: 50px;
+    /* background: url('/assets/images/bretagne.jpg') no-repeat center center/cover; */
+    color: var(--color-white);
+  }
+  
+  .stats {
+    background-color: var(--color-blue);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 300px;
+  }
+  
+  .btn {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: var(--color-green);
+  }
+  

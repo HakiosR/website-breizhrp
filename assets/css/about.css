@@ -1,0 +1,26 @@
+.about {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .team {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .team-member {
+    margin: 0 20px;
+    background-color: var(--color-gray);
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+  }
+  
+  .team-member h3 {
+    color: var(--color-blue);
+  }
+  
+  .team-member p {
+    color: var(--color-black);
+  }
+  

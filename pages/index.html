@@ -4,52 +4,228 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Breizh RP | Home</title>
-
-  <!-- Add stylesheets -->
   <link rel="stylesheet" href="/assets/css/style.css">
-  
-  <!-- Add favicon -->
-  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Begin header home page -->
+  <!-- Navbar -->
   <header>
-    <!-- Contenu de l'en-tête -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
   </header>
-  <!-- End header home page -->
+  
+  <style>
+    /* Couleurs principales */
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-blue: #1D3557;
+    --color-gray: #F0F0F0;
+    --color-green: #2E8B57;
+    --color-gold: #F4C542;
+    --color-hover-gold: #E2B731;
+    --color-dark-gray: #2E2E2E;
+  }
+  
+  /* Global */
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-gray);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-black);
+    font-weight: 600;
+  }
+  
+  p {
+    line-height: 1.8;
+    font-weight: 400;
+    color: var(--color-dark-gray);
+  }
+  
+  a {
+    color: var(--color-gold);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--color-hover-gold);
+  }
+  
+  footer {
+    background-color: var(--color-blue);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: var(--color-white);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--color-blue);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: var(--color-white);
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    border-radius: 5px;
+  }
+  
+  /* Animations and Transitions */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Button Styling */
+  .btn {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--color-green);
+    transform: scale(1.05);
+  }
+  
+  /* Home Section */
+  .home {
+    background: url('/assets/images/breton_flag.jpg') no-repeat center center/cover;
+    color: var(--color-white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .home p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .stats {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--color-white);
+    animation: fadeIn 2.5s ease-in-out;
+  }
+  
+  .stats h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  /* Section Titles */
+  section h1 {
+    font-size: 36px;
+    color: var(--color-black);
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .home h1 {
+      font-size: 36px;
+    }
+  
+    .home p {
+      font-size: 16px;
+    }
+  }
+  
+  </style>
 
-  <!-- Begin body home page -->
+  <!-- Home Content -->
   <main>
-    <!-- Contenu principal -->
-     <h1>Home</h1>
+    <section class="home">
+      <h1>Bienvenue sur Breizh RP</h1>
+      <p>Un serveur RP inspiré de Rennes et de la Bretagne</p>
 
-     <section class="navbar">
-        <div class="about-navbar">
-            <a href="https://localhost:3000/about">
-                <button>
-                    A propos de nous
-                </button>
-            </a>
-        </div>
-        <div class="contact-navbar">
-            <a href="https://localhost:3000/contact">
-                <button>
-                    Un problème ? Contactez nous !
-                </button>
-            </a>
-        </div>
-     </section>
+      <!-- Statistiques en temps réel -->
+      <div class="stats">
+        <h2>Statistiques en temps réel</h2>
+        <p>Joueurs actuellement connectés : <span id="playerCount">42</span></p>
+      </div>
+
+      <!-- Call to action -->
+      <a href="/join" class="btn">Rejoindre le serveur</a>
+    </section>
   </main>
-  <!-- End body home page -->
 
-  <!-- Begin footer home page -->
   <footer>
-    <!-- Contenu du pied de page -->
+    <p>© 2024 Breizh RP - Tous droits réservés.</p>
   </footer>
-  <!-- End footer home page -->
 
-  <!-- Add JavaScript files before closing the body tag -->
   <script src="/assets/js/script.js"></script>
 </body>
 </html>
