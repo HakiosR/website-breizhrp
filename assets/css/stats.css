@@ -1,0 +1,21 @@
+/* Style pour la section d'erreur 404 */
+.stats {
+    background-color: rgba(0, 0, 0, 0.9); /* Couleur de fond plus sombre */
+    padding: 20px;
+    border-radius: 10px;
+    color: #FFFFFF; /* Texte en blanc pour un meilleur contraste */
+    max-width: 400px; /* Limiter la largeur pour un affichage plus compact */
+    margin: 20px auto; /* Centrer le bloc */
+    text-align: center;
+}
+
+.stats h2 {
+    font-size: 36px; /* Augmenter la taille du texte pour l'erreur 404 */
+    margin-bottom: 10px;
+}
+
+.stats p {
+    font-size: 18px; /* Taille du texte plus grande */
+    margin-bottom: 10px;
+    color: #E0E0E0; /* Gris clair pour les sous-titres */
+}

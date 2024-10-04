@@ -1,26 +1,69 @@
+/* Styling for the About section */
 .about {
-    text-align: center;
-    padding: 50px;
-  }
-  
-  .team {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .team-member {
-    margin: 0 20px;
-    background-color: var(--color-gray);
-    padding: 20px;
-    border-radius: 8px;
-    width: 200px;
-  }
-  
-  .team-member h3 {
-    color: var(--color-blue);
-  }
-  
-  .team-member p {
-    color: var(--color-black);
-  }
-  
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.about p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: var(--color-dark);
+}
+
+/* Team Section */
+.team h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Team Cards */
+.team-cards {
+  display: flex;
+  justify-content: center; /* Centrer les cartes horizontalement */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 250px; /* Réduit la largeur des cartes */
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 120px; /* Redimensionne l'image à 120px */
+  height: 120px; /* Fixe la hauteur à 120px */
+  object-fit: cover;
+  border-radius: 50%; /* Donne un effet circulaire aux images */
+  margin: 20px auto 10px; /* Espace au-dessus et au-dessous de l'image */
+  display: block;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin: 10px 0;
+  font-size: 1.3em; /* Réduit légèrement la taille du texte */
+  color: var(--color-primary);
+}
+
+.card-content p {
+  font-size: 1.1em;
+  color: var(--color-dark);
+}

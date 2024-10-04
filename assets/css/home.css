@@ -1,27 +1,23 @@
+/* Home Section */
 .home {
-    text-align: center;
-    padding: 50px;
-    /* background: url('/assets/images/bretagne.jpg') no-repeat center center/cover; */
-    color: var(--color-white);
-  }
+  background: url('/assets/images/breton_flag.jpg') no-repeat center center/cover;
+  color: var(--color-white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
   
-  .stats {
-    background-color: var(--color-blue);
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px auto;
-    width: 300px;
-  }
+.home h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
   
-  .btn {
-    background-color: var(--color-gold);
-    color: var(--color-white);
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .btn:hover {
-    background-color: var(--color-green);
-  }
-  
+.home p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  animation: fadeIn 2s ease-in-out;
+}

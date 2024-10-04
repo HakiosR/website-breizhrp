@@ -5,46 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Breizh RP | About Us</title>
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/navbar.css">
+  <link rel="stylesheet" href="/assets/css/about.css">
+  <link rel="stylesheet" href="/assets/css/animation.css">
   <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="wrapper">
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- About Content -->
-  <main>
-    <section class="about">
-      <h1>À propos de Breizh RP</h1>
+    <!-- About Content -->
+    <main class="about">
+      <h1>A propos de Breizh RP</h1>
       <p>Nous sommes une équipe passionnée de jeux vidéo et de la culture bretonne, dédiée à offrir une expérience unique aux joueurs de Gmod.</p>
 
-      <!-- Team section -->
-      <div class="team">
+      <!-- Team Section -->
+      <section class="team">
         <h2>Notre équipe</h2>
-        <div class="team-member">
-          <h3>Nom du membre</h3>
-          <p>Développeur</p>
+
+        <div class="team-cards">
+          <!-- Team Member 1 -->
+          <div class="card">
+            <img src="/assets/images/default-member.jpg" alt="Nom du membre">
+            <div class="card-content">
+              <h3>Nom du membre</h3>
+              <p>Développeur</p>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="card">
+            <img src="/assets/images/default-member.jpg" alt="Nom du membre">
+            <div class="card-content">
+              <h3>Nom du membre</h3>
+              <p>Modérateur</p>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="card">
+            <img src="/assets/images/default-member.jpg" alt="Nom du membre">
+            <div class="card-content">
+              <h3>Nom du membre</h3>
+              <p>Graphiste</p>
+            </div>
+          </div>
         </div>
-        <div class="team-member">
-          <h3>Nom du membre</h3>
-          <p>Modérateur</p>
-        </div>
-        <!-- Ajoute plus de membres -->
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+  </div>
 
   <footer>
     <p>© 2024 Breizh RP - Tous droits réservés.</p>
   </footer>
 
-  <script src="/assets/js/script.js"></script>
+  <!-- <script src="/assets/js/script.js"></script> -->
+  <script src="/assets/js/animation.js"></script>
 </body>
 </html>

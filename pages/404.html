@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breizh RP | Page non trouvée</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/navbar.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<style>
+    /* Couleurs principales */
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-blue: #1D3557;
+    --color-gray: #F0F0F0;
+    --color-green: #2E8B57;
+    --color-gold: #F4C542;
+    --color-hover-gold: #E2B731;
+    --color-dark-gray: #2E2E2E;
+  }
+  
+  /* Global */
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-gray);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-black);
+    font-weight: 600;
+  }
+  
+  p {
+    line-height: 1.8;
+    font-weight: 400;
+    color: var(--color-dark-gray);
+  }
+  
+  a {
+    color: var(--color-gold);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--color-hover-gold);
+  }
+  
+  footer {
+    background-color: var(--color-blue);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: var(--color-white);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--color-blue);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: var(--color-white);
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    border-radius: 5px;
+  }
+  
+  /* Animations and Transitions */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Button Styling */
+  .btn {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--color-green);
+    transform: scale(1.05);
+  }
+  
+  /* Home Section */
+  .home {
+    background: url('/assets/images/breton_flag.jpg') no-repeat center center/cover;
+    color: var(--color-white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .home p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+/* Style pour la section d'erreur 404 */
+.stats {
+  background-color: rgba(0, 0, 0, 0.9); /* Couleur de fond plus sombre */
+  padding: 20px;
+  border-radius: 10px;
+  color: #FFFFFF; /* Texte en blanc pour un meilleur contraste */
+  max-width: 400px; /* Limiter la largeur pour un affichage plus compact */
+  margin: 20px auto; /* Centrer le bloc */
+  text-align: center;
+}
+
+.stats h2 {
+  font-size: 36px; /* Augmenter la taille du texte pour l'erreur 404 */
+  margin-bottom: 10px;
+  color: var(--color-white);
+}
+
+.stats p {
+  font-size: 18px; /* Taille du texte plus grande */
+  margin-bottom: 10px;
+  color: #E0E0E0; /* Gris clair pour les sous-titres */
+}
+
+  
+  /* Section Titles */
+  section h1 {
+    font-size: 36px;
+    color: var(--color-black);
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .home h1 {
+      font-size: 36px;
+    }
+  
+    .home p {
+      font-size: 16px;
+    }
+  }
+  
+  </style>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 404 Content -->
+  <main>
+    <section class="home">
+      <h1>Oups ! Page non trouvée</h1>
+      <p>Il semble que la page que vous cherchez n'existe pas.</p>
+
+      <!-- Illustration 404 -->
+      <div class="stats">
+        <h2>Erreur 404</h2>
+        <p>La page demandée est introuvable.</p>
+      </div>
+
+      <!-- Call to action -->
+      <a href="/" class="btn">Retour à l'accueil</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Breizh RP - Tous droits réservés.</p>
+  </footer>
+
+  <!-- <script src="/assets/js/script.js"></script> -->
+</body>
+</html>
