@@ -12,6 +12,7 @@
 .stats h2 {
     font-size: 36px; /* Augmenter la taille du texte pour l'erreur 404 */
     margin-bottom: 10px;
+    color: #E0E0E0;
 }
 
 .stats p {
