@@ -1,13 +1,8 @@
 const express = require('express');
-const https = require('https');
+const http = require('http');  // Utilise http au lieu de https
 const path = require('path');
 const fs = require('fs');
 const app = express();
-
-const sslOptions = {
-    key: fs.readFileSync(path.join(__dirname, '.ssl_keys', 'server.key')),
-    cert: fs.readFileSync(path.join(__dirname, '.ssl_keys', 'server.cert'))
-}
 
 // Ajout du logger pour les requêtes
 app.use((req, res, next) => {
@@ -39,11 +34,10 @@ const loadRoutesFromDirectory = (dirPath) => {
       else {
         app.get(`/${fileNameWithoutExtension}`, (req, res) => {
           res.sendFile(path.join(dirPath, file));
-      });
-    }
-  });
+        });
+      }
+    });
 };
-  
 
 // Appeler la fonction pour charger les routes depuis le dossier 'pages'
 loadRoutesFromDirectory(path.join(__dirname, 'pages'));
@@ -52,14 +46,9 @@ app.get('/test', (req, res) => {
   res.sendFile(path.join(__dirname, 'assets', 'css', 'style.css'));
 });
 
-
-// Gestion des erreurs 404
-// app.use((req, res) => {
-//   res.status(404).redirect('/404')
-// });
-// Démarrer le serveur
-https.createServer(sslOptions, app).listen(3000, () => {
-    console.log("HTTPS Server running on https://localhost:3000")
+// Démarrer le serveur HTTP
+http.createServer(app).listen(3000, () => {
+    console.log("HTTP Server running on http://localhost:3000");
 });
 
 console.log('Serving static files from:', path.join(__dirname, 'assets'));
